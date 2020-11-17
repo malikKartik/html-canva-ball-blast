@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        #top-score{
+            position: fixed;
+            color: white;
+            top: 10px;
+            left: 20px;
+        }
+        #card{
+            display: none;
+            padding-top: 50px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            border-radius: 5px;
+            height: 300px;
+            width: 600px;
+            box-sizing: border-box;
+        }
+        #card button{
+            height: 40px;
+            width: 90px;
+            background-color: violet;
+            border: none;
+            border-radius: 50px;
+            color: white;
+        }
+        #card button:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-score"><spna>Score: </spna><span Id="screen-score">0</span></div>
+    <div id="card">
+        <center><h1>Game Over</h1></center>
+        <center><h1>Score: <span id="score-card-score"></span></h1></center>
+        <center><button onclick="location.reload()">Restart</button></center>
+    </div>
+    <canvas></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
